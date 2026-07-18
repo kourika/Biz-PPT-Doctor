@@ -1,0 +1,26 @@
+{
+  "skill_name": "biz-deck-doctor",
+  "evals": [
+    {
+      "id": 1,
+      "mode": "Content Diagnosis",
+      "prompt": "我这周开了三个会，记了一堆零散笔记，下周要给老板汇报项目进展。帮我理出一份PPT大纲：项目原定10月上线，现在因为供应商产能问题预计要延到11月中；用户测试反馈整体正面，但有两个功能被吐槽体验差；团队申请增加1个人力来赶进度。",
+      "expected_output": "A governing message stated up front (delay + why + what's needed), action-title slides (not topic labels), the two negative feedback items surfaced rather than buried, and a clear, specific ask (headcount) — not a chronological retelling of the three meetings.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "mode": "Deck Audit",
+      "prompt": "帮我看看这份PPT怎么样，哪里需要改。（附上一份自制的.pptx，标题多为话题型如'市场分析''团队介绍'，某页文字密度很高，字体不统一）",
+      "expected_output": "A 4-dimension scored table with evidence per dimension, plus a page-numbered, priority-ordered fix list (structural issues before design issues before polish) — not generic praise or a vague 'looks fine' response.",
+      "files": ["sample_deck.pptx"]
+    },
+    {
+      "id": 3,
+      "mode": "Feedback Triage",
+      "prompt": "老板在会上口头提了一堆意见，我整理了下：'第3页数据来源说清楚'、'第5页感觉有点空'、'这个结论我不太认同，是不是应该先看用户留存再下结论'、'字体换成公司标准字体'、'第8页图表看不懂重点'。帮我整理成能直接照着改的清单。",
+      "expected_output": "Each comment classified (逻辑问题/事实错误/表达问题/风格偏好) and mapped to its slide with a concrete action; the retention-vs-conclusion comment flagged as a logic issue that may need restructuring, not just a wording tweak; output ordered by slide number, not by when each comment was said.",
+      "files": []
+    }
+  ]
+}
